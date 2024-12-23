@@ -7,49 +7,59 @@
         mc:Ignorable="d" 
         Title="Notepad" Height="450" Width="800" Icon="Assets (Solution)/logo.ico">
 
+    <!--Command Bindings-->
     <Window.CommandBindings>
+        
+        <!--New Command-->
         <CommandBinding x:Name="NewCommand"
                         Command="ApplicationCommands.New"
                         CanExecute="NewCommand_CanExecute"  
                         Executed="NewCommand_Executed">
         </CommandBinding>
 
+        <!--Open Command-->
         <CommandBinding x:Name="OpenCommand"
                         Command="ApplicationCommands.Open"
                         CanExecute="OpenCommand_CanExecute"
                         Executed="OpenCommand_Executed">
         </CommandBinding>
 
+        <!--Save Command-->
         <CommandBinding x:Name="SaveCommand"
                         Command="ApplicationCommands.Save"
                         CanExecute="SaveCommand_CanExecute"
                         Executed="SaveCommand_Executed">
         </CommandBinding>
 
+        <!--Save As Command-->
         <CommandBinding x:Name="SaveAsCommand"
                         Command="ApplicationCommands.SaveAs"
                         CanExecute="SaveAsCommand_CanExecute"
                         Executed="SaveAsCommand_Executed">
         </CommandBinding>
 
+        <!--Close Command-->
         <CommandBinding x:Name="CloseCommand"
                         Command="ApplicationCommands.Close"
                         CanExecute="CloseCommand_CanExecute"
                         Executed="CloseCommand_Executed">
         </CommandBinding>
 
+        <!--Cut Command-->
         <CommandBinding x:Name="CutCommand"
                         Command="ApplicationCommands.Cut"
                         CanExecute="CutCommand_CanExecute"
                         Executed="CutCommand_Executed">
         </CommandBinding>
 
+        <!--Copy Command-->
         <CommandBinding x:Name="CopyCommand"
                         Command="ApplicationCommands.Copy"
                         CanExecute="CopyCommand_CanExecute"
                         Executed="CopyCommand_Executed">
         </CommandBinding>
 
+        <!--Paste Command-->
         <CommandBinding x:Name="PasteCommand"
                         Command="ApplicationCommands.Paste"
                         CanExecute="PasteCommand_CanExecute"
@@ -58,7 +68,11 @@
     </Window.CommandBindings>
 
     <DockPanel>
+        
+        <!--Top Menu Bar-->
         <Menu DockPanel.Dock="Top">
+            
+            <!--File Menu Items-->
             <MenuItem Header="File">
                 <MenuItem Header="New" Command="ApplicationCommands.New"></MenuItem>
                 <MenuItem Header="Open" Command="ApplicationCommands.Open"></MenuItem>
@@ -67,16 +81,21 @@
                 <Separator></Separator>
                 <MenuItem Header="Exit" Command="ApplicationCommands.Close"></MenuItem>
             </MenuItem>
+            
+            <!-- Edit Menu Items-->
             <MenuItem Header="Edit">
                 <MenuItem Header="Cut" Command="ApplicationCommands.Cut"></MenuItem>
                 <MenuItem Header="Copy" Command="ApplicationCommands.Copy"></MenuItem>
                 <MenuItem Header="Paste" Command="ApplicationCommands.Paste"></MenuItem>
             </MenuItem>
+            
+            <!--View Menu Items-->
             <MenuItem Header="View">
                 <MenuItem Header="Fullscreen" Click="FullScreen_Click"></MenuItem>
             </MenuItem>
         </Menu>
 
+        <!--Main Text Input-->
         <TextBox AcceptsReturn="True"
                  DockPanel.Dock="Top"
                  BorderThickness="0"
@@ -90,10 +109,14 @@
                  x:Name="txtBox">
         </TextBox>
 
+        <!--Bottom Information Panel-->
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" DockPanel.Dock="Bottom">
+            
+            <!--Line Count-->
             <Label Content="Lines :"></Label>
             <TextBlock Padding="0,5" Text="{Binding LineCount}"></TextBlock>
 
+            <!--Word Count-->
             <Label Margin="10,0,0,0" Content="Words :"></Label>
             <TextBlock Padding="0,5" Text="{Binding WordCount}"></TextBlock>
         </StackPanel>
