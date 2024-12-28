@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace Notepad.ViewModels
 {
@@ -78,7 +71,7 @@ namespace Notepad.ViewModels
         private void UpdateCounts()
         {
             LineCount = string.IsNullOrEmpty(Content) ? 0 : Content.Split('\n').Length;
-            WordCount = string.IsNullOrEmpty(Content) ? 0 : Regex.Matches(Content,@"\b\S+\b").Count;
+            WordCount = string.IsNullOrEmpty(Content) ? 0 : Regex.Matches(Content, @"\b\S+\b").Count;
         }
     }
 }
