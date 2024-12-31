@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Notepad"
-        mc:Ignorable="d" 
-        Title="Notepad" Height="450" Width="800" Icon="Assets (Solution)/logo.ico">
+        xmlns:local="clr-namespace:Notepad" ResizeMode="NoResize"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Title="Notepad" d:Height="900" d:Width="1600" Icon="Assets (Solution)/logo.ico">
 
     <!--Command Bindings-->
     <Window.CommandBindings>
