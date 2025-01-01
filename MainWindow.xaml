@@ -9,7 +9,7 @@
 
     <!--Command Bindings-->
     <Window.CommandBindings>
-        
+
         <!--New Command-->
         <CommandBinding x:Name="NewCommand"
                         Command="ApplicationCommands.New"
@@ -68,10 +68,10 @@
     </Window.CommandBindings>
 
     <DockPanel>
-        
+
         <!--Top Menu Bar-->
         <Menu DockPanel.Dock="Top">
-            
+
             <!--File Menu Items-->
             <MenuItem Header="File">
                 <MenuItem Header="New" Command="ApplicationCommands.New"></MenuItem>
@@ -81,14 +81,14 @@
                 <Separator></Separator>
                 <MenuItem Header="Exit" Command="ApplicationCommands.Close"></MenuItem>
             </MenuItem>
-            
+
             <!-- Edit Menu Items-->
             <MenuItem Header="Edit">
                 <MenuItem Header="Cut" Command="ApplicationCommands.Cut"></MenuItem>
                 <MenuItem Header="Copy" Command="ApplicationCommands.Copy"></MenuItem>
                 <MenuItem Header="Paste" Command="ApplicationCommands.Paste"></MenuItem>
             </MenuItem>
-            
+
             <!--View Menu Items-->
             <MenuItem Header="View">
                 <MenuItem Header="Fullscreen" Click="FullScreen_Click"></MenuItem>
@@ -111,7 +111,7 @@
 
         <!--Bottom Information Panel-->
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" DockPanel.Dock="Bottom">
-            
+
             <!--Line Count-->
             <Label Content="Lines :"></Label>
             <TextBlock Padding="0,5" Text="{Binding LineCount}"></TextBlock>
