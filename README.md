@@ -52,7 +52,11 @@ A lightweight and intuitive Notepad application built using the **Windows Presen
 
 ## **Screenshots**
 
-
+![Picture 1](https://github.com/user-attachments/assets/0dc7eb51-dd44-4930-a9d6-905476ff99b1)
+![Picture 2](https://github.com/user-attachments/assets/74c5dfd9-1036-430c-8900-91172c4edd05)
+![Picture 3](https://github.com/user-attachments/assets/ce239db8-51d7-4a3d-a23a-e22e0f3e1390)
+![Picture 4](https://github.com/user-attachments/assets/baaf1621-b1d3-4408-886d-d5f8a4c912ed)
+![Picture 5](https://github.com/user-attachments/assets/410a487f-b051-426e-9f5c-03e5d353c8de)
 
 ---
 
