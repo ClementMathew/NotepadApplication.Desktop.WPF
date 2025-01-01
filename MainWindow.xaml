@@ -102,8 +102,8 @@
                  TextWrapping="Wrap" 
                  AcceptsTab="True"
                  VerticalScrollBarVisibility="Auto" 
-                 MinHeight="360"
-                 MaxHeight="360"
+                 MinHeight="800"
+                 MaxHeight="800"
                  Padding="5"
                  Text="{Binding Content, UpdateSourceTrigger=PropertyChanged}"
                  x:Name="txtBox">
