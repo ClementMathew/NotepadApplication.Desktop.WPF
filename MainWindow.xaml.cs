@@ -208,7 +208,7 @@ namespace Notepad
         /// <param name="e"></param>
         private void CloseCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            if (_model.Content.Length > 0)
+            if (_model.Content != null && _model.Content.Length > 0)
             {
                 MessageBoxResult result = MessageBox.Show("Do you want to save changes?",
                     "Untitled",
